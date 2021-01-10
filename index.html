@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>SNAKE GAME</h1>
+      <div id="welcome-bar"></div>
+      <button id="start">press here</button>
+      <div id="my-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="myForm">
+            <label for="fname"
+              >Hi! <br />
+              What's your name?</label
+            >
+            <br />
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="type in your name"
+              class="input-style"
+            />
+            <br />
+
+            <input
+              type="submit"
+              value="let's play"
+              class="submit-button"
+              id="submit"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="game-over-modal" class="modal-game-over">
+        <div class="modal-content-game-over">
+          <p class="game-over">GAME OVER</p>
+          <h3>You scored: <span id="final-score">0</span></h3>
+          <button class="play-again-button" id="play-again">play again</button>
+        </div>
+      </div>
+      <h2>Your score: <span id="score">0</span></h2>
+      <div class="grid"></div>
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
